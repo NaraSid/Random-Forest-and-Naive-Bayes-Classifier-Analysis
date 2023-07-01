@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="node #0\ngrade of spondylolisthesis <= 17.125\nsamples = 100.0%\nvalue = [0.153, 0.343, 0.505]\nclass = SL", fillcolor="#e0cef9"] ;
+1 [label="node #1\nlumbar lordosis angle <= 29.13\nsamples = 51.5%\nvalue = [0.311, 0.66, 0.028]\nclass = NO", fillcolor="#9bf2bf"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="node #2\ngrade of spondylolisthesis <= -1.53\nsamples = 7.4%\nvalue = [0.714, 0.286, 0.0]\nclass = DH", fillcolor="#efb388"] ;
+1 -> 2 ;
+3 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 3 ;
+4 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 4 ;
+11 [label="node #11\npelvic radius <= 125.84\nsamples = 44.1%\nvalue = [0.25, 0.717, 0.033]\nclass = NO", fillcolor="#84efb0"] ;
+1 -> 11 ;
+12 [label="(...)", fillcolor="#C0C0C0"] ;
+11 -> 12 ;
+41 [label="(...)", fillcolor="#C0C0C0"] ;
+11 -> 41 ;
+42 [label="node #42\nlumbar lordosis angle <= 58.02\nsamples = 48.5%\nvalue = [0.0, 0.036, 0.964]\nclass = SL", fillcolor="#8640e6"] ;
+0 -> 42 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+43 [label="node #43\nsacral slope <= 51.68\nsamples = 16.2%\nvalue = [0.0, 0.118, 0.882]\nclass = SL", fillcolor="#9253e8"] ;
+42 -> 43 ;
+44 [label="(...)", fillcolor="#C0C0C0"] ;
+43 -> 44 ;
+45 [label="(...)", fillcolor="#C0C0C0"] ;
+43 -> 45 ;
+48 [label="node #48\nsamples = 32.4%\nvalue = [0.0, 0.0, 1.0]\nclass = SL", fillcolor="#8139e5"] ;
+42 -> 48 ;
+}

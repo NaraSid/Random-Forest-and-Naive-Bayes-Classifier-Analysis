@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="node #0\ngrade of spondylolisthesis <= 16.08\nsamples = 100.0%\nvalue = [0.213, 0.273, 0.514]\nclass = SL", fillcolor="#d5bdf6"] ;
+1 [label="node #1\nsacral slope <= 33.2\nsamples = 51.5%\nvalue = [0.438, 0.505, 0.057]\nclass = NO", fillcolor="#e8fcf0"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="node #2\npelvic radius <= 125.64\nsamples = 28.4%\nvalue = [0.655, 0.345, 0.0]\nclass = DH", fillcolor="#f3c3a1"] ;
+1 -> 2 ;
+3 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 3 ;
+20 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 20 ;
+31 [label="node #31\npelvic tilt <= 20.06\nsamples = 23.1%\nvalue = [0.17, 0.702, 0.128]\nclass = NO", fillcolor="#80eeae"] ;
+1 -> 31 ;
+32 [label="(...)", fillcolor="#C0C0C0"] ;
+31 -> 32 ;
+41 [label="(...)", fillcolor="#C0C0C0"] ;
+31 -> 41 ;
+48 [label="node #48\npelvic incidence <= 56.33\nsamples = 48.5%\nvalue = [0.0, 0.054, 0.946]\nclass = SL", fillcolor="#8844e6"] ;
+0 -> 48 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+49 [label="node #49\npelvic incidence <= 55.02\nsamples = 8.2%\nvalue = [0.0, 0.263, 0.737]\nclass = SL", fillcolor="#ae80ee"] ;
+48 -> 49 ;
+50 [label="(...)", fillcolor="#C0C0C0"] ;
+49 -> 50 ;
+55 [label="(...)", fillcolor="#C0C0C0"] ;
+49 -> 55 ;
+56 [label="node #56\npelvic radius <= 123.53\nsamples = 40.3%\nvalue = [0.0, 0.011, 0.989]\nclass = SL", fillcolor="#823be5"] ;
+48 -> 56 ;
+57 [label="(...)", fillcolor="#C0C0C0"] ;
+56 -> 57 ;
+58 [label="(...)", fillcolor="#C0C0C0"] ;
+56 -> 58 ;
+}

@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="node #0\nsacral slope <= 42.71\nsamples = 100.0%\nvalue = [0.241, 0.245, 0.514]\nclass = SL", fillcolor="#d2b9f6"] ;
+1 [label="node #1\ngrade of spondylolisthesis <= 16.805\nsamples = 50.7%\nvalue = [0.477, 0.364, 0.159]\nclass = DH", fillcolor="#fae9dc"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="node #2\nlumbar lordosis angle <= 49.64\nsamples = 42.8%\nvalue = [0.554, 0.424, 0.022]\nclass = DH", fillcolor="#f9e2d2"] ;
+1 -> 2 ;
+3 [label="node #3\nsamples = 37.0%\nvalue = [0.63, 0.37, 0.0]\nclass = DH", fillcolor="#f4cbad"] ;
+2 -> 3 ;
+4 [label="node #4\nsamples = 5.8%\nvalue = [0.0, 0.818, 0.182]\nclass = NO", fillcolor="#65eb9d"] ;
+2 -> 4 ;
+5 [label="node #5\nsamples = 8.0%\nvalue = [0.0, 0.0, 1.0]\nclass = SL", fillcolor="#8139e5"] ;
+1 -> 5 ;
+6 [label="node #6\ngrade of spondylolisthesis <= 20.48\nsamples = 49.3%\nvalue = [0.009, 0.128, 0.862]\nclass = SL", fillcolor="#9558e9"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label="node #7\nlumbar lordosis angle <= 71.405\nsamples = 8.0%\nvalue = [0.071, 0.786, 0.143]\nclass = NO", fillcolor="#6beca0"] ;
+6 -> 7 ;
+8 [label="node #8\nsamples = 6.5%\nvalue = [0.083, 0.917, 0.0]\nclass = NO", fillcolor="#4be78c"] ;
+7 -> 8 ;
+9 [label="node #9\nsamples = 1.4%\nvalue = [0.0, 0.0, 1.0]\nclass = SL", fillcolor="#8139e5"] ;
+7 -> 9 ;
+10 [label="node #10\ngrade of spondylolisthesis <= 26.475\nsamples = 41.3%\nvalue = [0.0, 0.032, 0.968]\nclass = SL", fillcolor="#853fe6"] ;
+6 -> 10 ;
+11 [label="node #11\nsamples = 3.6%\nvalue = [0.0, 0.333, 0.667]\nclass = SL", fillcolor="#c09cf2"] ;
+10 -> 11 ;
+12 [label="node #12\nsamples = 37.7%\nvalue = [0.0, 0.011, 0.989]\nclass = SL", fillcolor="#823be5"] ;
+10 -> 12 ;
+}
